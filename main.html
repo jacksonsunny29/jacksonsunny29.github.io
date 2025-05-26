@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Sunny - AI & Computer Vision Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind slate-50 */
+            color: #1e293b; /* Tailwind slate-800 */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0; /* slate-200 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #38bdf8; /* sky-500 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0ea5e9; /* sky-600 */
+        }
+        /* Styles previously handled by @apply are now directly in HTML elements */
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold text-sky-600">Jackson Sunny</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-sky-100 hover:text-sky-700 transition-colors">About</a>
+                        <a href="#experience" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-sky-100 hover:text-sky-700 transition-colors">Experience</a>
+                        <a href="#projects" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-sky-100 hover:text-sky-700 transition-colors">Projects</a>
+                        <a href="#education" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-sky-100 hover:text-sky-700 transition-colors">Education</a>
+                        <a href="#skills" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-sky-100 hover:text-sky-700 transition-colors">Skills</a>
+                        <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-sky-100 hover:text-sky-700 transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="bg-sky-600 text-white py-20 md:py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <img src="jack.jpg" alt="Jackson Sunny" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mx-auto mb-6 border-4 border-sky-500 shadow-lg" onerror="this.onerror=null; this.src='https://placehold.co/160x160/e0f2fe/38bdf8?text=JS';">
+            
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">Jackson Sunny</h1>
+            <p class="text-xl md:text-2xl text-sky-100 mb-8">AI Engineer | 3D Computer Vision | Machine Learning</p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:jacksonsunny29@icloud.com" class="text-sky-100 hover:text-white transition-colors" title="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/jacksonsunny" target="_blank" rel="noopener noreferrer" class="text-sky-100 hover:text-white transition-colors" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/jacksonsunny29" target="_blank" rel="noopener noreferrer" class="text-sky-100 hover:text-white transition-colors" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <section id="about" class="mb-16">
+            <h2 class="text-3xl font-bold text-sky-600 mb-8 text-center">About Me</h2>
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <p class="text-lg text-slate-700 leading-relaxed">
+                    Highly motivated AI Engineer with a Master's degree in Artificial Intelligence and Advanced Visual Computing from Ecole Polytechnique. Passionate about 3D Computer Vision, Deep Learning, and developing innovative solutions. Proven experience in multimodal learning, point cloud processing, and deploying machine learning models. Eager to contribute to challenging projects that push the boundaries of AI technology.
+                </p>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-16">
+            <h2 class="text-3xl font-bold text-sky-600 mb-8 text-center">Work Experience</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-1">AI Engineer (CDI)</h3>
+                    <p class="text-md text-sky-600 font-medium mb-1">SAMP SAS, Paris, France</p>
+                    <p class="text-sm text-slate-500 mb-3">Nov 2024 – Mar 2025</p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-1">
+                        <li>Created a multimodal classifier by fusing image features and point features.</li>
+                        <li>Created synthetic images from point clouds for integrating it into the learning pipeline.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-1">3D Computer Vision Intern</h3>
+                    <p class="text-md text-sky-600 font-medium mb-1">SAMP SAS, Paris, France</p>
+                    <p class="text-sm text-slate-500 mb-3">Apr 2024 – Sept 2024</p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-1">
+                        <li>Developed a multimodal network for fusing point cloud features to respective image features for better segmentation of pointclouds.</li>
+                        <li>Built mapping from points to images (respective pixels) to pixel features for multimodality.</li>
+                        <li>Analysed the impact of image foundation models on point cloud segmentation.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-1">Research Intern</h3>
+                    <p class="text-md text-sky-600 font-medium mb-1">Telecom Paris, Paris, France</p>
+                    <p class="text-sm text-slate-500 mb-3">May 2023 – Sept 2023</p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-1">
+                        <li>Developed a tool to interactively edit the 3D-Skeleton of Pulmonary Airways generated from CT Scan.</li>
+                        <li>Usage of Graph Neural Networks to refine the 3D-Skeleton by using the generated segments as reference.</li>
+                        <li>Designed Geometric methods for refining connection paths in the airway.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-1">Machine Learning and IOT Intern</h3>
+                    <p class="text-md text-sky-600 font-medium mb-1">Adihptham Technologies, Bangalore, India</p>
+                    <p class="text-sm text-slate-500 mb-3">Mar 2021 – June 2021</p>
+                    <ul class="list-disc list-inside text-slate-700 space-y-1">
+                        <li>Assisted in building the production pipeline for Computer Vision applications.</li>
+                        <li>Responsible for building edge Deep Learning and Computer Vision applications using Pytorch and ONNX.</li>
+                        <li>Worked with Arduino and Node Red for prototyping IOT products.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-16">
+            <h2 class="text-3xl font-bold text-sky-600 mb-8 text-center">Projects</h2>
+            
+            <h3 class="text-2xl font-semibold text-slate-700 mb-6 text-center">Research Projects</h3>
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-xl font-semibold text-slate-900 mb-1">Fingerprint Matching with Graph Neural Network</h4>
+                    <p class="text-sm text-slate-500 mb-2">IDEMIA, Paris | Oct 2023 – Present</p>
+                    <p class="text-slate-700 mb-3">Developing a project for matching fingerprints. Leveraging Graph Neural Networks and embedded finger minutiae.</p>
+                    <p class="text-xs text-slate-500">Supervised by: Laurent Kazdaghli and Victor Videau.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-xl font-semibold text-slate-900 mb-1">Fake News Detection and Correction</h4>
+                    <p class="text-sm text-slate-500 mb-2">Nov 2020 – May 2021</p>
+                    <p class="text-slate-700 mb-3">Developed a novel stance detection model for news articles and web-scraped data for authenticity. Awarded Best Paper at Reva University, 2021.</p>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-semibold text-slate-700 mb-6 text-center">Course Projects</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/e0f2fe/0ea5e9?text=Unity3D+Game" alt="Evolution in Wonderland Game" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/e0f2fe/38bdf8?text=Project+Image';">
+                    <h4 class="text-lg font-semibold text-slate-900 mb-1">Evolution in Wonderland - Unity3D Game</h4>
+                    <p class="text-sm text-slate-500 mb-2">Sept – Oct 2023 | Course: Advanced 3D Graphics</p>
+                    <p class="text-slate-700 text-sm">Developed a game using terrain brushes, Inverse Kinematics, genetic algorithms, and neural networks for animal brains.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                     <img src="https://placehold.co/600x400/e0f2fe/0ea5e9?text=Deep+Learning" alt="MaskFormer Project" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/e0f2fe/38bdf8?text=Project+Image';">
+                    <h4 class="text-lg font-semibold text-slate-900 mb-1">MaskFormer Implementation</h4>
+                    <p class="text-sm text-slate-500 mb-2">Oct – Dec 2023 | Course: Deep Learning</p>
+                    <p class="text-slate-700 text-sm">Studied, analysed and Implemented the MaskFormer paper from scratch for semantic segmentation.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                     <img src="https://placehold.co/600x400/e0f2fe/0ea5e9?text=Computer+Vision" alt="Bird Species Retrieval" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/e0f2fe/38bdf8?text=Project+Image';">
+                    <h4 class="text-lg font-semibold text-slate-900 mb-1">Bird Species Retrieval (CLIP & Blip-2)</h4>
+                    <p class="text-sm text-slate-500 mb-2">Feb – Mar 2024 | Course: Computer Vision</p>
+                    <p class="text-slate-700 text-sm">Implemented CLIP and Blip-2 for bird species retrieval from CUB-200-2011 dataset, using linear probing.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/e0f2fe/0ea5e9?text=Geometric+Shapes" alt="DeltaConv Project" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/e0f2fe/38bdf8?text=Project+Image';">
+                    <h4 class="text-lg font-semibold text-slate-900 mb-1">DeltaConv Analysis</h4>
+                    <p class="text-sm text-slate-500 mb-2">Nov – Dec 2023 | Course: Analysis and Deep Learning on Geometric Shapes</p>
+                    <p class="text-slate-700 text-sm">Analysed and implemented DeltaConv on Point Clouds, studying differences with KPConv.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/e0f2fe/0ea5e9?text=Image+Synthesis" alt="Radiance Fields Project" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/e0f2fe/38bdf8?text=Project+Image';">
+                    <h4 class="text-lg font-semibold text-slate-900 mb-1">Differentiable Point-Based Radiance Fields</h4>
+                    <p class="text-sm text-slate-500 mb-2">Jan – Mar 2023 | Course: Image Synthesis</p>
+                    <p class="text-slate-700 text-sm">Analysed and implemented the paper for efficient view synthesis from scratch.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/e0f2fe/0ea5e9?text=Reinforcement+Learning" alt="DRL Project" class="rounded-lg mb-4 w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/e0f2fe/38bdf8?text=Project+Image';">
+                    <h4 class="text-lg font-semibold text-slate-900 mb-1">Continuous Control with DRL</h4>
+                    <p class="text-sm text-slate-500 mb-2">Oct – Dec 2023 | Course: Deep Reinforcement Learning</p>
+                    <p class="text-slate-700 text-sm">Analysed DDPG algorithm for physical games using visual data, studying differences with DQNs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="mb-16">
+            <h2 class="text-3xl font-bold text-sky-600 mb-8 text-center">Education</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-1">Master of Science and Technology</h3>
+                    <p class="text-md text-sky-600 font-medium mb-1">Ecole Polytechnique, Paris, France</p>
+                    <p class="text-sm text-slate-500 mb-2">Sept 2022 – Sept 2024</p>
+                    <p class="text-slate-700">Specialization: Artificial Intelligence and Advanced Visual Computing</p>
+                    <p class="text-slate-700">GPA: 3.67/4</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-1">Engineering in Computer Science</h3>
+                    <p class="text-md text-sky-600 font-medium mb-1">Reva University, Bangalore, India</p>
+                    <p class="text-sm text-slate-500 mb-2">Aug 2017 – Sept 2021</p>
+                    <p class="text-slate-700">Major: Computer Science and Engineering (First class with distinction)</p>
+                    <p class="text-slate-700">CGPA: 8.72/10</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-16">
+            <h2 class="text-3xl font-bold text-sky-600 mb-8 text-center">Technical Skills</h2>
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-800 mb-2">Languages</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">C</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">C++</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-800 mb-2">Developer Tools</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">VS Code</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Vim</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Git</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-800 mb-2">Libraries/Frameworks</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">PyTorch</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">PyTorch3D</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Torch Geometric</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">OpenCV</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Unity3D</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">OpenAI Gym</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">libigl</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Flask</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-800 mb-2">Extras</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Mathematics for Deep Learning</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Mathematics for Machine Learning</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">Linux Server Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recognition" class="mb-16">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-slate-700 mb-6 text-center">Patent</h3>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-xl font-semibold text-slate-900 mb-1">Air Pollution Control System Using Tunnels</h4>
+                        <p class="text-sm text-slate-500 mb-2">Jan 2021 | Indian Patent Office (No: 202041023584)</p>
+                        <p class="text-slate-700">Novel design for metropolitan cities, simulated using CFD and optimized with DNNs.</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-slate-700 mb-6 text-center">Achievements</h3>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-xl font-semibold text-slate-900 mb-1">Hack Zurich Winner</h4>
+                        <p class="text-sm text-slate-500 mb-2">Sept 2022</p>
+                        <p class="text-slate-700 mb-2">Won "Best Project for Huawei-Sunrise-Swissski" for creating a monitoring tool for skiing athletes.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">PyTorch</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">YOLOV5</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">MonoDepth</span>
+                            <span class="bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-sm font-medium">GPS Mapping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="coursework" class="mb-16">
+            <h2 class="text-3xl font-bold text-sky-600 mb-8 text-center">Relevant Coursework</h2>
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <ul class="columns-2 md:columns-3 list-disc list-inside text-slate-700 space-y-1">
+                    <li>Machine Learning & Deep Learning</li>
+                    <li>Deep Learning</li>
+                    <li>Deep Reinforcement Learning</li>
+                    <li>Analysis and Deep Learning on Geometric shapes</li>
+                    <li>Advanced ML & Autonomous Agents</li>
+                    <li>Image Analysis & Computer Vision</li>
+                    <li>Advanced 3D Graphics</li>
+                    <li>Image Synthesis</li>
+                    <li>Soft Robotics, fabrication and Control</li>
+                    <li>Navigation for Autonomous Systems</li>
+                    <li>Computer Animation</li>
+                    <li>Natural Language Processing</li>
+                    <li>Real-Time AI in Video Games</li>
+                    <li>Intelligent Agents</li>
+                    <li>Advanced Data Structures & Algorithms</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="bg-slate-800 text-slate-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Get In Touch</h2>
+            <p class="mb-2">Paris, France</p>
+            <p class="mb-2">
+                <a href="mailto:jacksonsunny29@icloud.com" class="hover:text-sky-400 transition-colors">jacksonsunny29@icloud.com</a>
+            </p>
+            <div class="flex justify-center space-x-6 mb-8 mt-4"> 
+                <a href="https://www.linkedin.com/in/jacksonsunny" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-sky-400 transition-colors" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/jacksonsunny29" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-sky-400 transition-colors" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-sm">&copy; <span id="currentYear"></span> Jackson Sunny. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        // Basic smooth scroll for nav links (can be enhanced)
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === '#') return; // Skip if it's just a placeholder href="#"
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
